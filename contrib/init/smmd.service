@@ -1,0 +1,26 @@
+[Unit]
+Description=smm's distributed currency daemon
+After=network.target
+
+[Service]
+User=smm
+Group=smm
+
+Type=forking
+PIDFile=/var/lib/smmd/smmd.pid
+
+ExecStart=/usr/bin/smmd -daemon -pid=/var/lib/smmd/smmd.pid \
+          -conf=/etc/smm/smm.conf -datadir=/var/lib/smmd
+
+ExecStop=-/usr/bin/smm-cli -conf=/etc/smm/smm.conf \
+         -datadir=/var/lib/smmd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

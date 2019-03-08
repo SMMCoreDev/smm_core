@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Smm
+Comment=Smm P2P Cryptocurrency
+Comment[fr]=Smm, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Smm, eşten eşe kriptografik sanal para birimi
+Exec=smm-qt %u
+Terminal=false
+Type=Application
+Icon=smm128
+MimeType=x-scheme-handler/smm;
+Categories=Office;Finance;
