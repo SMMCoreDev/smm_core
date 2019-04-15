@@ -123,7 +123,7 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 1500; //RELEASE
 
-        nModifierUpdateBlock = 999999999;
+        nModifierUpdateBlock = 90000;
         nZerocoinStartHeight = 901;
         nAccumulatorStartHeight = 1;
         nZerocoinStartTime = 1527811200; // Friday, June 1, 2018 12:00:00 AM - GMT
