@@ -4,6 +4,9 @@ Decentralized crypto-currency SMM coin is a new step in the crypto-currency univ
 
 Changes:
 
+1.0.1 
+- Minor improvements plus stability fix
+
 1.0.0
 - First official release
 
